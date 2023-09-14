@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Image from 'next/image'
 import map from '../public/map.svg'
-// import { V0Component } from '/V0Component'
+import { V0Component } from './v0Component'
 import TestComponent from "./testComponent"
 
 // import { Layout } from '@vercel/examples-ui'
@@ -48,7 +48,7 @@ export default function Index({
       <main className="flex flex-col items-center flex-1 px-4 sm:px-20 text-center z-10 pt-8 sm:pt-20">
         <h1 className="text-3xl sm:text-5xl font-bold">Welcome!</h1>
         
-        {/* <V0Component /> */}
+        <V0Component />
         <TestComponent />
 
         {city!=='undefined' ? (
