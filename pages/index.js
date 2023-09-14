@@ -29,11 +29,13 @@ export default function Index({
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-50">
       <div>
-        {true !== true ? (
+        {true === true ? (
           <div>
-            <p>Hello world.</p>
-            <p>${city}</p>
-            <p>${name}</p>
+            <p>Debug:</p>
+            <p>City: ${city} ${typeof(city)}</p>
+            <p>Region: ${region} ${typeof(region)}</p>
+            <p>Country: ${country} ${typeof(country)}</p>
+            <p>City Nickname: ${cityNickname} ${typeof(cityNickname)}</p>
           </div>
           ) : null}
       </div>
