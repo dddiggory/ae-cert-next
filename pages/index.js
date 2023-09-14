@@ -21,10 +21,10 @@ export default function Index({
   // currencyCode,
   // currencySymbol,
 }) {
-  name = decodeURIComponent(name) || null
-  city = decodeURIComponent(city) || null
-  country = decodeURIComponent(country) || ''
-  cityNickname = decodeURIComponent(cityNickname) || null
+  name = decodeURIComponent(name) || undefined
+  city = decodeURIComponent(city) || undefined
+  country = decodeURIComponent(country) || undefined
+  cityNickname = decodeURIComponent(cityNickname) || undefined
   let cityWiki = "https://en.wikipedia.org/wiki/"+city+", "+region
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-50">
