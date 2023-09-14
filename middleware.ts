@@ -20,7 +20,11 @@ export async function middleware(req: NextRequest) {
   
   const { nextUrl: url, geo } = req
   
-  // return NextResponse.rewrite(url);
+  //this is an Early Return; it's ending the Middleware
+  //function before it has the chance to complete its work. 
+  //To turn on our middleware function, comment-out
+  //the next line by adding // in front of it. Then, Commit!
+  return NextResponse.rewrite(url);
 
   const country = geo.country || ''
   const city = geo.city || ''
