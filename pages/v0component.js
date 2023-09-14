@@ -4,3 +4,5 @@ export default function V0Component() {
     <p>I'm a component</p>
   )
 }
+
+export { V0Component }

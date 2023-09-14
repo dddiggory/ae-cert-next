@@ -1,6 +1,8 @@
+import * as React from "react"
+
 import Image from 'next/image'
 import map from '../public/map.svg'
-import V0Component from './V0Component.js'
+import { V0Component } from './V0Component'
 // import { Layout } from '@vercel/examples-ui'
 
 // Forward properties from `middleware.ts`
