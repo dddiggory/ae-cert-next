@@ -23,7 +23,7 @@ export default function Index({
 }) {
   name = decodeURIComponent(name) || null
   city = decodeURIComponent(city) || null
-  country = decodeURIComponent(country) || null
+  country = decodeURIComponent(country) || ''
   cityNickname = decodeURIComponent(cityNickname) || null
   let cityWiki = "https://en.wikipedia.org/wiki/"+city+", "+region
   return (
@@ -80,7 +80,7 @@ export default function Index({
     
 
         
-        {country !== 'undefined' ? (
+        {country ? (
           <section className="border border-gray-300 bg-white rounded-lg shadow-lg mt-16 w-full hover:shadow-2xl transition">
           <div className="p-4 flex justify-center items-between border-b">
             <div className="self-center">

@@ -20,7 +20,9 @@ export async function middleware(req: NextRequest) {
   
   const { nextUrl: url, geo } = req
   
-  const country = geo.country || 'undefined'
+  // return NextResponse.rewrite(url);
+
+  const country = geo.country || ''
   const city = geo.city || ''
   const region = geo.region || ''
 
