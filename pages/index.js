@@ -46,7 +46,7 @@ export default function Index({
         <V0Component />
 
 
-        {city ? (
+        {city!==undefined ? (
           <p class="pt-12 text-xl">You're in beautiful {city}, {region}!</p>
         ) : (
           <div>
@@ -59,7 +59,7 @@ export default function Index({
           </div>
         )}
 
-        {city && cityNickname ? (
+        {city!==undefined && cityNickname!==undefined ? (
           <div>
             <p class="text-xl pb-4">Also known as {cityNickname}.</p>
             <p>Learn more about {city} <a class="underline text-blue-600" href={cityWiki}>here.</a></p>
@@ -69,7 +69,7 @@ export default function Index({
           <p></p>
         )}
         
-        {city && !cityNickname ? (
+        {city!==undefined && cityNickname===undefined ? (
           <div>
           <p>I don't know of a nickname for {city}, but I'm sure it's a lovely place.</p>
           <p>Learn more about {city} <a class="underline text-blue-600" href={cityWiki}>here.</a></p>
@@ -80,7 +80,7 @@ export default function Index({
     
 
         
-        {country ? (
+        {country!==undefined ? (
           <section className="border border-gray-300 bg-white rounded-lg shadow-lg mt-16 w-full hover:shadow-2xl transition">
           <div className="p-4 flex justify-center items-between border-b">
             <div className="self-center">
