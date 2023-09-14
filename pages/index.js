@@ -21,11 +21,11 @@ export default function Index({
   // currencyCode,
   // currencySymbol,
 }) {
-  name = decodeURIComponent(name) || 'null'
-  city = decodeURIComponent(city) || 'null'
-  country = decodeURIComponent(country) || 'null'
-  cityNickname = decodeURIComponent(cityNickname) || 'null'
-  let cityWiki = "https://en.wikipedia.org/wiki/"+city+", "+country
+  name = decodeURIComponent(name) || null
+  city = decodeURIComponent(city) || null
+  country = decodeURIComponent(country) || null
+  cityNickname = decodeURIComponent(cityNickname) || null
+  let cityWiki = "https://en.wikipedia.org/wiki/"+city+", "+region
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-50">
       <div>
@@ -46,24 +46,39 @@ export default function Index({
         <V0Component />
 
 
-        {country === 'undefined' ? (
-          <p className="mt-4 pt-10 text-lg sm:text-xl text-gray-700">
-          We'd love to tailor our content to your location, but we haven't set up Edge Middleware yet.
-        </p>
+        {city ? (
+          <p class="pt-12 text-xl">You're in beautiful {city}, {region}!</p>
         ) : (
-          <p class="pt-12 text-xl">You're in beautiful {city}!</p>
+          <div>
+            <p className="mt-4 pt-10 text-lg sm:text-xl text-gray-700">
+              We'd love to tailor our content to your location, but we haven't set up Edge Middleware yet.
+            </p> 
+            <p className="mt-4 pt-2 text-lg sm:text-xl text-gray-700">
+              <a class="underline text-blue-600" href="https://github.com/dddiggory/ae-cert-next" target="_blank">Help us out?</a>
+            </p>
+          </div>
         )}
 
-        {cityNickname !== 'null' ? (
+        {city && cityNickname ? (
           <div>
             <p class="text-xl pb-4">Also known as {cityNickname}.</p>
             <p>Learn more about {city} <a class="underline text-blue-600" href={cityWiki}>here.</a></p>
             <p>Want a different {city} nickname? <a href="" class="underline text-blue-600">Refresh the page</a> and Middleware will do the rest.</p>
             </div>
         ) : (
-          <p>I don't know of a nickname for {city}, but I'm sure it's a lovely place.</p>
+          <p></p>
         )}
         
+        {city && !cityNickname ? (
+          <div>
+          <p>I don't know of a nickname for {city}, but I'm sure it's a lovely place.</p>
+          <p>Learn more about {city} <a class="underline text-blue-600" href={cityWiki}>here.</a></p>
+          </div>
+        ) : (
+          <p></p>
+        )}
+    
+
         
         {country !== 'undefined' ? (
           <section className="border border-gray-300 bg-white rounded-lg shadow-lg mt-16 w-full hover:shadow-2xl transition">

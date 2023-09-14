@@ -11,18 +11,18 @@ function getNickname(city) {
       let nicknames = cityNicknames[city];
       return nicknames[Math.floor(Math.random() * nicknames.length)];
   } else {
-      return null;
+      return '';
   }
 }
 
 
 export async function middleware(req: NextRequest) {
+  
   const { nextUrl: url, geo } = req
   
-  
-  const country = geo.country || 'US'
-  const city = geo.city || 'New York'
-  const region = geo.region || 'New York'
+  const country = geo.country || 'undefined'
+  const city = geo.city || ''
+  const region = geo.region || ''
 
   const countryInfo = countries.find((x) => x.cca2 === country)
   const cityNickname = getNickname(city);
