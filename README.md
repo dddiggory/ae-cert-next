@@ -1,38 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## AE Certification: The Next(.js) Frontier
 
-## Getting Started
+You've done well to make it this far!  You're almost done with your Level 1 AE Certification.
+As a final step, we'll show you how Vercel's framework-defined infrastructure intelligently deploys your code to its edge network.  Let's find out what it means to be dynamic at the speed of static!
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Let's get started:
+1. Click "Fork" in the top nav.  You're going to make your own copy of this repo, where you can make changes and deploy some dynamic code.
+2. Normally, you'd set up a new Next.js project locally, but we've set this up so that you can do all your editing inside of Github today.  Just click the "pencil" button on any file you want to edit.
+3. <WIP more to come.  Goals: deploy to Vercel to see current state.  Find the Middleware file and make it functional. Use v0.dev to create a new component that you'd want to add, and load it into /pages/v0component.js>
