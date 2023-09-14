@@ -3,6 +3,8 @@ import * as React from "react"
 import Image from 'next/image'
 import map from '../public/map.svg'
 // import { V0Component } from '/V0Component'
+import TestComponent from "./testComponent"
+
 // import { Layout } from '@vercel/examples-ui'
 
 // Forward properties from `middleware.ts`
@@ -47,7 +49,7 @@ export default function Index({
         <h1 className="text-3xl sm:text-5xl font-bold">Welcome!</h1>
         
         {/* <V0Component /> */}
-
+        <TestComponent />
 
         {city!=='undefined' ? (
           <p className="pt-12 text-xl">You're in beautiful {city}, {region}!</p>
