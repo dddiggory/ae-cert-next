@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import map from '../public/map.svg'
-import V0Component from './v0component'
+import V0Component from './V0Component'
 
 // import { Layout } from '@vercel/examples-ui'
 
