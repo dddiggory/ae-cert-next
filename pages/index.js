@@ -49,23 +49,23 @@ export default function Index({
 
 
         {city!=='undefined' ? (
-          <p class="pt-12 text-xl">You're in beautiful {city}, {region}!</p>
+          <p className="pt-12 text-xl">You're in beautiful {city}, {region}!</p>
         ) : (
           <div>
             <p className="mt-4 pt-10 text-lg sm:text-xl text-gray-700">
               We'd love to tailor our content to your location, but we haven't set up Edge Middleware yet.
             </p> 
             <p className="mt-4 pt-2 text-lg sm:text-xl text-gray-700">
-              <a class="underline text-blue-600" href="https://github.com/dddiggory/ae-cert-next" target="_blank">Help us out?</a>
+              <a className="underline text-blue-600" href="https://github.com/dddiggory/ae-cert-next" target="_blank">Help us out?</a>
             </p>
           </div>
         )}
 
         {city!=='undefined' && cityNickname!=='undefined' ? (
           <div>
-            <p class="text-xl pb-4">Also known as {cityNickname}.</p>
-            <p>Learn more about {city} <a class="underline text-blue-600" href={cityWiki}>here.</a></p>
-            <p>Want a different {city} nickname? <a href="" class="underline text-blue-600">Refresh the page</a> and Middleware will do the rest.</p>
+            <p className="text-xl pb-4">Also known as {cityNickname}.</p>
+            <p>Learn more about {city} <a className="underline text-blue-600" href={cityWiki}>here.</a></p>
+            <p>Want a different {city} nickname? <a href="" className="underline text-blue-600">Refresh the page</a> and Middleware will do the rest.</p>
             </div>
         ) : (
           <p></p>
@@ -74,7 +74,7 @@ export default function Index({
         {city!=='undefined' && cityNickname==='undefined' ? (
           <div>
           <p>I don't know of a nickname for {city}, but I'm sure it's a lovely place.</p>
-          <p>Learn more about {city} <a class="underline text-blue-600" href={cityWiki}>here.</a></p>
+          <p>Learn more about {city} <a className="underline text-blue-600" href={cityWiki}>here.</a></p>
           </div>
         ) : (
           <p></p>
