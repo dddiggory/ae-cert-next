@@ -47,10 +47,9 @@ export default function Index({
         <Image alt="World Map" src={map} fill={true} quality={100} />
       </div>
       <main className="flex flex-col items-center flex-1 px-4 sm:px-20 text-center z-10 pt-8 sm:pt-20">
-        <h1 className="text-3xl sm:text-5xl font-bold">Welcome!</h1>
+        <h1 className="text-3xl sm:text-5xl pb-10 font-bold">Welcome!</h1>
         
         <MyV0Component />
-        <TestComponent />
 
         {city!=='undefined' ? (
           <p className="pt-12 text-xl">You're in beautiful {city}, {region}!</p>
