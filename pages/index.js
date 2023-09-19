@@ -49,7 +49,6 @@ export default function Index({
       <main className="flex flex-col items-center flex-1 px-4 sm:px-20 text-center z-10 pt-8 sm:pt-20">
         <h1 className="text-3xl sm:text-5xl pb-10 font-bold">Welcome!</h1>
         
-        <TestComponent />
         <MyV0Component />
 
         {city!=='undefined' ? (
