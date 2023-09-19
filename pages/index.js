@@ -33,7 +33,7 @@ export default function Index({
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-50">
       <div>
-        {true === true ? (
+        {true === false ? (
           <div>
             <p>Debug:</p>
             <p>City: ${city} ${typeof(city)}</p>
